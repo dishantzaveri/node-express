@@ -1,32 +1,20 @@
-//Globals
+const os = require('os');
 
-// console.log(__dirname)
+os.cpuz
 
-// setInterval(() => {
-//     console.log('Hello world')
-// }, 1000)
-
-//Modules - commonjs - every file in node is a module
-
-// const john='john'
-// const peter='peter'
-// const secret='super secret'
-
-// const sayHi=(name)=>{
-//     console.log(`Hello ${name}`)
-// }
+//info about current user
 
 
-//{ john: 'john', peter: 'peter' } is the output
-const names = require('./name');
-// console.log(names); 
+const user = os.userInfo();
+console.log(user);
 
-const sayHi = require('./utils');
+//method returns system uptime in seconds
 
-const data =require('./alternativeflavor');
+console.log(`system uptime is ${os.uptime()} seconds`)
 
-require('./mindgrenade')
-
-// sayHi('Susan')
-// sayHi(names.john)
-// sayHi(names.peter)
+const currentOS = {
+    name:os.type(),
+    release:os.release(),
+    totalMem:os.totalmem(),
+    freeMem:os.freemem()
+}
