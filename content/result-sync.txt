@@ -1,0 +1,1 @@
+result of the two files: hi this is first text file hi this is second text fileresult of the two files: hi this is first text file , hi this is second text file
