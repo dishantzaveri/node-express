@@ -22,3 +22,7 @@ app.get('/api/items', (req, res) => {
 app.listen(5000, () => {
   console.log('Server is listening on port 5000....')
 })
+
+// GET /api/items?user=john 20
+// { name: 'John', id: 3 }
+// authorize

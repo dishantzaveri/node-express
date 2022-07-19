@@ -3,10 +3,10 @@ const app = express()
 
 //  req => middleware => res
 
-const logger = (req, res, next) => {
+const logger = (req, res, next) => {   //next is the middleware function
   const method = req.method
   const url = req.url
-  const time = new Date().getFullYear()
+  const time = new Date().getDate()
   console.log(method, url, time)
   next()
 }
